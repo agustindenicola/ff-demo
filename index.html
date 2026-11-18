@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>FF — Ónix y Aura, botellas de diseño</title>
+    <meta
+      name="description"
+      content="Dos botellas, dos materiales nobles. Ónix, térmica de acero que conserva la temperatura todo el día, y Aura, de vidrio borosilicato con tapa de bambú."
+    />
+    <meta name="theme-color" content="#0d0d0e" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content="FF — Lo esencial, bien llevado" />
+    <meta
+      property="og:description"
+      content="Ónix, térmica de acero. Aura, vidrio borosilicato. Dos botellas pensadas para durar años."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="./assets/index-SjXWf3vv.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DJfz7_4u.css">
+  </head>
+  <body>
+    <!-- Monograma FF: misma geometría que src/brand.js (lo verifica un test). -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="ff-mark" viewBox="0 0 48 56">
+        <rect x="0" y="0" width="7" height="56" />
+        <rect x="22" y="0" width="7" height="56" />
+        <rect x="0" y="0" width="48" height="7" />
+        <rect x="0" y="24" width="17" height="6" />
+        <rect x="22" y="24" width="17" height="6" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <div class="loader" aria-hidden="true">
+      <svg class="loader__mark"><use href="#ff-mark" /></svg>
+      <span class="loader__bar"><span></span></span>
+    </div>
+
+    <canvas class="stage" aria-hidden="true"></canvas>
+
+    <header class="nav">
+      <a class="nav__brand" href="#inicio" aria-label="FF, volver al inicio">
+        <svg class="mark"><use href="#ff-mark" /></svg>
+      </a>
+      <nav class="nav__links" aria-label="Productos">
+        <a href="#onix">Ónix</a>
+        <a href="#aura">Aura</a>
+      </nav>
+      <a class="nav__cta" href="#coleccion">Comprar</a>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" data-scene="hero">
+        <div class="hero__content">
+          <p class="eyebrow" data-intro>FF — Colección 01</p>
+          <h1 class="display hero__title">
+            <span class="line"><span>Lo esencial,</span></span>
+            <span class="line"
+              ><span><em>bien llevado.</em></span></span
+            >
+          </h1>
+          <div class="hero__actions" data-intro>
+            <a class="button" href="#coleccion">Comprar</a>
+          </div>
+        </div>
+        <div class="fallback-art fallback-art--duo" aria-hidden="true"></div>
+        <div class="hero__hint" data-intro aria-hidden="true">
+          <span class="hero__scroll"></span>
+          <span>Arrastrá para girar</span>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span>Acero</span><span class="marquee__dot"></span><span><em>Vidrio</em></span
+            ><span class="marquee__dot"></span><span>Bambú</span><span class="marquee__dot"></span
+            ><span><em>Diseño</em></span
+            ><span class="marquee__dot"></span><span>FF</span><span class="marquee__dot"></span
+            ><span><em>Para siempre</em></span
+            ><span class="marquee__dot"></span>
+          </div>
+          <div class="marquee__group">
+            <span>Acero</span><span class="marquee__dot"></span><span><em>Vidrio</em></span
+            ><span class="marquee__dot"></span><span>Bambú</span><span class="marquee__dot"></span
+            ><span><em>Diseño</em></span
+            ><span class="marquee__dot"></span><span>FF</span><span class="marquee__dot"></span
+            ><span><em>Para siempre</em></span
+            ><span class="marquee__dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <section class="manifesto" data-scene="manifesto" aria-labelledby="manifesto-title">
+        <div class="manifesto__sticky">
+          <h2 class="visually-hidden" id="manifesto-title">Nuestra idea</h2>
+          <p class="display manifesto__text" data-words>Menos descartable. Más diseño.</p>
+        </div>
+      </section>
+
+      <section
+        class="product product--right"
+        id="onix"
+        data-scene="thermal"
+        data-turn="thermal"
+        aria-labelledby="onix-title"
+      >
+        <div class="product__sticky">
+          <div class="fallback-art fallback-art--thermal" aria-hidden="true"></div>
+          <div class="product__panel">
+            <p class="eyebrow" data-step>01 — Térmica</p>
+            <h2 class="display product__name" id="onix-title" data-step>Ónix</h2>
+            <p class="product__tagline display" data-step><em>Tu temperatura, todo el día.</em></p>
+            <dl class="stats">
+              <div class="stat" data-step>
+                <dt>frío</dt>
+                <dd>24h</dd>
+              </div>
+              <div class="stat" data-step>
+                <dt>calor</dt>
+                <dd>12h</dd>
+              </div>
+              <div class="stat" data-step>
+                <dt>capacidad</dt>
+                <dd>750ml</dd>
+              </div>
+            </dl>
+            <fieldset class="swatches" data-step>
+              <legend>Color: <span data-color-name>Negro</span></legend>
+              <label class="swatch">
+                <input type="radio" name="onix-color" value="negro" data-label="Negro" checked />
+                <span class="visually-hidden">Negro</span>
+              </label>
+              <label class="swatch">
+                <input type="radio" name="onix-color" value="arena" data-label="Arena" />
+                <span class="visually-hidden">Arena</span>
+              </label>
+              <label class="swatch">
+                <input type="radio" name="onix-color" value="salvia" data-label="Salvia" />
+                <span class="visually-hidden">Salvia</span>
+              </label>
+            </fieldset>
+            <div class="buy" data-step>
+              <span class="buy__price" data-price="onix"></span>
+              <a class="button" data-product-link="onix" href="#">Comprar Ónix</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="product product--left"
+        id="aura"
+        data-scene="glass"
+        data-turn="glass"
+        aria-labelledby="aura-title"
+      >
+        <div class="product__sticky">
+          <div class="fallback-art fallback-art--glass" aria-hidden="true"></div>
+          <div class="product__panel">
+            <p class="eyebrow" data-step>02 — Vidrio</p>
+            <h2 class="display product__name" id="aura-title" data-step>Aura</h2>
+            <p class="product__tagline display" data-step><em>Puro vidrio. Puro sabor.</em></p>
+            <dl class="stats">
+              <div class="stat" data-step>
+                <dt>capacidad</dt>
+                <dd>600ml</dd>
+              </div>
+              <div class="stat" data-step>
+                <dt>tapa</dt>
+                <dd>Bambú</dd>
+              </div>
+              <div class="stat" data-step>
+                <dt>vidrio</dt>
+                <dd>100%</dd>
+              </div>
+            </dl>
+            <div class="buy" data-step>
+              <span class="buy__price" data-price="aura"></span>
+              <a class="button" data-product-link="aura" href="#">Comprar Aura</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="duo" id="coleccion" data-scene="duo" aria-labelledby="duo-title">
+        <h2 class="display duo__title" id="duo-title" data-reveal>
+          Elegí la tuya. <em>O las dos.</em>
+        </h2>
+        <div class="fallback-art fallback-art--duo" aria-hidden="true"></div>
+        <ul class="duo__cards" role="list">
+          <li class="card" data-reveal>
+            <h3 class="card__name">Ónix</h3>
+            <p class="card__price" data-price="onix"></p>
+            <a class="button" data-product-link="onix" href="#">Comprar</a>
+          </li>
+          <li class="card" data-reveal>
+            <h3 class="card__name">Aura</h3>
+            <p class="card__price" data-price="aura"></p>
+            <a class="button" data-product-link="aura" href="#">Comprar</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__brand" href="#inicio" aria-label="FF, volver al inicio">
+        <svg class="mark"><use href="#ff-mark" /></svg>
+      </a>
+      <p class="footer__note">Diseñadas en Argentina. Pensadas para durar.</p>
+      <nav class="footer__links" aria-label="Enlaces">
+        <a data-store-link href="#">Tienda</a>
+        <a data-instagram-link href="#">Instagram</a>
+      </nav>
+      <p class="footer__legal">© <span data-year>2026</span> FF</p>
+    </footer>
+
+  </body>
+</html>
